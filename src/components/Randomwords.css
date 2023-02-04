@@ -1,0 +1,183 @@
+.main_body{
+    /* background-color: aqua; */
+    padding-bottom: 5%;
+}
+.material_container{
+    width: 70%;
+    padding: 3% 5% 3% 5%;
+    margin: auto;
+}
+.input-group{
+    width:70%;
+    /* margin-bottom: 0px; */
+    /* padding: 0px; */
+    
+}
+.input-group span{
+    /* width: 5px; */
+    /* padding: 0px; */
+    /* height:auto; */
+}
+.your_list{
+    /* background-color:grey; */
+    /* border-style: solid; */
+    /* width: 1px; */
+    /* border-width: 1.5px; */
+    /* background-color: rgb(241, 236, 236); */
+    width: 100%;
+    height: 10vh;
+    overflow: auto;
+}
+.your_list p{
+    border-style: solid;
+    width: fit-content;
+    display: inline-block;
+    border-width: 1px;
+    cursor: pointer;
+    /* margin-top: auto; */
+    /* margin: auto; */
+    /* margin-bottom: auto; */
+
+}
+.result_container{
+    /* background-color: rgb(66, 62, 62); */
+    padding: 2% 5% 5% 5%;
+    margin-top: 0px;
+    width: auto;
+}
+#notice{
+    /* margin-top: 0px; */
+    /* padding-bottom: 1%; */
+    /* margin-bottom: 4%; */
+}
+.genrated_words{
+    height: 10vh;
+    overflow: auto;
+
+    /* background-color: aqua; */
+}
+.genrated_words p{
+    border-style: solid;
+    width: fit-content;
+    display: inline-block;
+    border-width: 1px;
+    cursor: pointer;
+
+}
+.about_randomword{
+    width: 70%;
+    align-items: center;
+    /* background-color: aqua; */
+    margin-left: auto;
+    margin-right: auto;
+    padding: 3% 3% 3% 3%;
+    /* margin-bottom: 5%; */
+    /* text-align: center; */
+}
+.title{
+    margin-bottom: 3%;
+    /* color: rgba(0, 0, 0, 0.768); */
+}
+
+
+
+/* dark theme  */
+.main_body_dark{
+    background-color: rgba(13,12,12);
+}
+.result_container_dark{
+    background-color: rgba(38, 38, 38, 0.389);
+}
+.your_list_dark{
+    background-color: rgba(10, 10, 10, 0.442);
+}
+.your_list_dark p{
+    color: rgb(177, 174, 174);
+}
+.genrated_words_dark p{
+    color: rgb(177, 174, 174);
+
+}
+.input_group_dark input{
+    background-color: black;
+    color: rgb(177, 174, 174);
+    
+    
+    /* background-color: transparent; */
+}
+.input_group_dark input:focus{
+    background-color: black;
+    color: rgb(177, 174, 174);
+}
+
+.input_group_dark span{
+    background-color: black;
+    color: rgb(177, 174, 174);
+}
+.about_randomword_dark{
+    background-color: rgba(24, 24, 24, 0.389);
+    /* color: ; */
+    color: rgb(158, 155, 155);
+}
+.title_dark{
+    color: grey;
+}
+/* light theme  */
+.main_body_light{
+    background-color:  rgb(240, 238, 235);
+}
+
+.result_container_light{
+    background-color: rgba(128, 128, 128, 0.192);
+}
+.your_list_light{
+    background-color: rgb(241, 236, 236);
+}
+.input_group_light input{
+    background-color:rgba(248, 249, 250, 0.459);
+
+}
+.about_randomword_light{
+    background-color: rgba(137, 134, 134, 0.22);
+    /* color: ; */
+    /* color: rgb(158, 155, 155); */
+    color: rgba(0, 0, 0, 0.846);
+}
+.title_light{
+    color: rgba(0, 0, 0, 0.768);
+}
+@media only screen and (min-width: 320px) and (max-width: 480px){
+    .about_randomword{width:95%;}
+    .about_randomword p,h2{font-size: 95%;}
+    .material_container{width: 100%;padding: 3% 2% 3% 2%;}
+    .input-group span,input{font-size: 70%;}
+    .input-group span{padding-left: 0.5vw;padding-right: 0.5vw;}
+    .input-group {width: 100%;}
+    .input-group button{font-size: 90%;}
+} 
+@media only screen and (min-width: 481px) and (max-width: 768px){
+    .about_randomword{width: 90%;}
+    .about_randomword p,h2{font-size: 100%;} 
+    .material_container{width: 92%;padding: 3% 2% 3% 2%;}
+    .input-group span,input{font-size: 90%;}
+    .input-group span{padding-left: 0.5vw;padding-right: 0.5vw;}
+    .input-group {width: 100%;}
+    .input-group button{font-size: 95%;}
+} 
+@media only screen and (min-width: 789px) and (max-width: 1024px){
+    .about_randomword{width: 90%;}
+    .about_randomword p,h2{font-size: 105%;}
+    .material_container{width: 85%;padding: 3% 2% 3% 2%;}
+    /* .input-group span{padding-left: 0.5vw;padding-right: 0.5vw;} */
+    .input-group {width: 100%;}
+    
+} 
+@media only screen and (min-width: 1025px) and (max-width: 1200px){
+    .about_randomword{width: 85%;}
+    .about_randomword p,h2{font-size: 110%;}
+    .material_container{
+        width: 78%;
+        padding: 3% 2% 3% 2%;
+    }
+    
+} 
