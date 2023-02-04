@@ -1,7 +1,6 @@
 import React from 'react'
-import "./Footer.css"
+import "./styles/Footer.css"
 import {Link} from "react-router-dom"
-
 export default function Footer(props) {
   return (
     <>
@@ -20,10 +19,8 @@ export default function Footer(props) {
           </div>
         </div>
         <hr />
-      
         <p class="text-center">Copyright © 2016-2024 by TextAnalyzer All Right Reserved</p>
       </footer>
-    
     </>
   )
 }

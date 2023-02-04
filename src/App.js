@@ -2,21 +2,18 @@ import React,{useState} from 'react'
 import './App.css';
 import Body from './components/Body';
 import Footer from './components/Footer';
-import Experiments from './components/Experiments';
 import Navbar from './components/Navbar';
 import Randomwords from './components/Randomwords';
-import {Switch,Route,Link,BrowserRouter as Router ,Routes} from "react-router-dom"
+import {Route,BrowserRouter as Router ,Routes} from "react-router-dom"
 import About from './components/About';
 import Replacetext from './components/Replacetext';
 
 function App() {
-  
   let clientmode = localStorage.getItem('Name'); 
   if(clientmode == null){
     localStorage.setItem('Name','light');
   }
   let [mode,updatemode] = useState(clientmode === 'dark'?'dark':'light')
-  
   function darkmode(){
     if(clientmode === 'light'){ 
       updatemode('dark');
@@ -37,7 +34,6 @@ function App() {
         <Route path='/about' element={<About></About>}></Route>
         <Route path='/replace' element={<Replacetext mode={mode}></Replacetext>}></Route>
        </Routes>
-        {/* <Experiments></Experiments> */}
         <Footer mode={mode}></Footer>
       </div>
     </Router>

@@ -3,15 +3,11 @@ import "./styles/Replacetext.css"
 
 export default function Replacetext(props) {
     let [userinput,updateuser] = useState('')
-
     function replace(){
-        // let textfield = document.getElementById('user_text_area');
         let new_string = document.getElementById('new_string');
         let old_string = document.getElementById('old_string');
         let update_string = userinput.replaceAll(old_string.value,new_string.value)
-        // textfield.value = update_string
         updateuser(update_string);
-
     }
   return (
     <div className={`body_replacetext body_replacetext_${props.mode}`} >
