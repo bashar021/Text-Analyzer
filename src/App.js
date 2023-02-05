@@ -7,6 +7,7 @@ import Randomwords from './components/Randomwords';
 import {Route,BrowserRouter as Router ,Routes} from "react-router-dom"
 import About from './components/About';
 import Replacetext from './components/Replacetext';
+import TermsPrivacy from './components/TermsPrivacy';
 
 function App() {
   let clientmode = localStorage.getItem('Name'); 
@@ -31,8 +32,9 @@ function App() {
        <Routes>
         <Route path='/' element={<Body mode={mode} ></Body>}></Route>
         <Route path='/randomwords' element={<Randomwords mode={mode}></Randomwords>}></Route>
-        <Route path='/about' element={<About></About>}></Route>
+        <Route path='/about' element={<About mode={mode}></About>}></Route>
         <Route path='/replace' element={<Replacetext mode={mode}></Replacetext>}></Route>
+        <Route path='/terms-and-privacy' element={<TermsPrivacy mode={mode}></TermsPrivacy>}></Route>
        </Routes>
         <Footer mode={mode}></Footer>
       </div>

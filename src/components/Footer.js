@@ -2,6 +2,7 @@ import React from 'react'
 import "./styles/Footer.css"
 import {Link} from "react-router-dom"
 export default function Footer(props) {
+  
   return (
     <>
       <footer className={`footer_${props.mode}`} >
@@ -11,8 +12,7 @@ export default function Footer(props) {
             <p class="h6">All about your text</p>
           </div>
           <div className={`footer_short_links_box`}>
-                  <Link className='footer_short_links_box_a' to="/">Terms of Services</Link>
-                  <Link  className='footer_short_links_box_a' to="/">Privacy and Policy</Link>
+                  <Link preventScrollReset={false} relative="path"  className='footer_short_links_box_a' to="/terms-and-privacy">Terms and Privacy</Link>
                   <Link  className='footer_short_links_box_a' to="/about">About</Link>
                   <Link  className='footer_short_links_box_a' to="/">Home</Link>
                   <Link  className='footer_short_links_box_a' to="/randomwords">Random Words</Link>

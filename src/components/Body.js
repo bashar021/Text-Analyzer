@@ -1,4 +1,4 @@
-import React,{useState} from 'react'
+import React,{useState,useEffect} from 'react'
 import './styles/Body.css'
 import copyicon from './images/copyicon.png'
 import clearicon from './images/trash.png'
@@ -6,6 +6,9 @@ import uppercaseicon from './images/uppercase2.png'
 import lowercaseicon from './images/lowercase4.png'
 import title from './images/title.png'
 export default function Body(props) {
+  useEffect(() => {
+    window.scrollTo({top: 0, left: 0, behavior: 'smooth'});
+  }, []);
   let [inputvalue,updateinputvalue] = useState('')
   function copy_to_clipboard(){
         let textvalue = document.getElementById('inputfield');

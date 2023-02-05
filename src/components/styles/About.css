@@ -1,0 +1,37 @@
+.main_body{width: 100%;padding-top: 5%;}
+.about_box{margin: auto;width: 60%;padding: 2% 2% 2% 2%;}
+.about_box h2{margin: 4% 0 4% 0;}
+.about_box h4{margin: 2% 0 2% 0;}
+.about_para{margin: auto;margin-top: 2%;margin-bottom: 2%;}
+.main_body_light{background-color: rgb(240, 238, 235)}
+.about_box_light{background-color: rgba(202, 201, 199, 0.55)}
+.main_body_dark{background-color: rgb(26, 25, 25)}
+.about_box_dark{background-color: rgb(15, 14, 14);color: rgb(154, 151, 151);}
+.about_box_dark h2{color: rgb(197, 196, 196);}
+@media only screen and (min-width: 320px) and (max-width: 480px){
+    .about_box{width: 95%;}
+    .about_para{font-size: 90%;}
+    .about_box h1{font-size: 130%;}
+    .about_box h3{font-size: 110%;}
+    .about_box h2{font-size: 100%;}
+    .about_box h4{font-size: 100%;}
+}
+@media only screen and (min-width: 481px) and (max-width: 768px){
+    .about_box{width: 80%;}
+    .about_para{font-size: 95%;}
+    .about_box h1{font-size: 140%;}
+    .about_box h3{font-size: 120%;}
+    .about_box h2{font-size: 105%;}
+    .about_box h4{font-size: 105%;}
+}
+@media only screen and (min-width: 769px) and (max-width: 1024px){
+    .about_box{width: 70%;}
+    .about_para{font-size: 105%;}
+    .about_box h1{font-size: 150%;}
+    .about_box h3{font-size: 130%;}
+    .about_box h2{font-size: 110%;}
+    .about_box h4{font-size: 110%;}
+}
+@media only screen and (min-width: 1025px) and (max-width: 1200px){
+    .about_box{width: 60%;}
+}

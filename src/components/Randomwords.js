@@ -1,8 +1,11 @@
-// import words from 'random-words';
-import React,{useState} from 'react'
+
+import React,{useState,useEffect} from 'react'
 import './styles/Randomwords.css'
 var randomWords = require('random-words');
 export default function Randomwords(props) {
+    useEffect(() => {
+        window.scrollTo({top: 0, left: 0, behavior: 'smooth'});
+      }, []);
     let [mywordlist,updatemywordlist] = useState([])
     let [NoWords,updatenowords] = useState(5)
     let [WordsLength,updatewordslength] = useState(5)

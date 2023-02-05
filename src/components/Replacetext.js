@@ -2,6 +2,7 @@ import React,{useState} from 'react'
 import "./styles/Replacetext.css"
 
 export default function Replacetext(props) {
+    
     let [userinput,updateuser] = useState('')
     function replace(){
         let new_string = document.getElementById('new_string');
@@ -26,6 +27,11 @@ export default function Replacetext(props) {
             <button type="button"  onClick={function(){navigator.clipboard.writeText(userinput)}}  class={`btn replace_btn_group btn-${props.mode === 'dark'?'secondary':'primary'}`}>Copy</button>
             <button type="button" onClick={()=>{updateuser('');document.getElementById('new_string').value = '';document.getElementById('old_string').value = ''}} class={`btn replace_btn_group btn-${props.mode === 'dark'?'secondary':'primary'}`}>Clear</button>
            
+        </div>
+        <div className={`about_randomword about_randomword_${props.mode}`}>
+            <h2>Replace Word</h2>
+            <p className="h5">Replace text that you enter or paste into the New String text field window with the value that you have place into the Old String text field. This Replace Word feature is not case sensitive. If your put the word red into the New String text field you will replace red and not Red where it appears</p>
+            <p className="h5">In the New String text field type or paste the block of text that includes the material that you want to replace. In the Old String text field enter the text that you want to replace. Click on the replace button to replace your word.</p>
         </div>
     </div>
   )

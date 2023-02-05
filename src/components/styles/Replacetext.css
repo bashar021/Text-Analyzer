@@ -1,133 +1,40 @@
-.body_replacetext{
-    padding: 3% 0 4% 0;
-}
-.replacetext_container{
-    width: fit-content;
-    margin: auto;
-    padding: 2% 2% 2% 2%;
-}
-.textfield{
-    
-}
-.input_box{
-    width: 100%;
-    margin: 2% 0 0 0;
-}
-.input_label{
-    width: 20%;
-    justify-content: center;
-    line-height: normal;
-}  
-.replace_input{
-} 
-.replace_input:focus{
-    background-color: rgba(128, 128, 128, 0.812);
-    
-}
-.replace_btn_group{
-    margin: 2% 0 2% 2%;
-}
-
-
+.body_replacetext{padding: 3% 0 4% 0;}
+.replacetext_container{width: fit-content;margin: auto;padding: 2% 2% 2% 2%;margin-bottom: 4%;}
+.input_box{width: 100%;margin: 2% 0 0 0;}
+.input_label{width: 20%;justify-content: center;line-height: normal;}  
+.replace_input:focus{background-color: rgba(128, 128, 128, 0.812);}
+.replace_btn_group{ margin: 2% 0 2% 2%;}
 /* light mode  */
-.body_replacetext_light{
-    background-color:  rgb(228, 227, 225);
-}
-.replacetext_container_light{
-    background-color:rgba(162, 133, 133, 0.19);
-}
-.textfield_light{
-    background-color:rgba(162, 133, 133, 0.19);
-    
-}
-.input_label_light{
-    background-color: rgba(78, 77, 77, 0.45);
-}  
-.replace_input_light{
-    background-color: rgba(128, 128, 128, 0.472);
-} 
-
+.body_replacetext_light{background-color:  rgb(228, 227, 225);}
+.replacetext_container_light{background-color:rgba(162, 133, 133, 0.19);}
+.textfield_light{background-color:rgba(162, 133, 133, 0.19);}
+.input_label_light{background-color: rgba(78, 77, 77, 0.45);}  
+.replace_input_light{background-color: rgba(128, 128, 128, 0.472);} 
 /* dark mode  */
-.body_replacetext_dark{
-    background-color: rgba(13,12,12);
-}
-
-.replacetext_container_dark{
-    background-color: rgba(45, 44, 44, 0.49);
-    color: rgb(213, 210, 210);
-}
-.textfield_dark{
-    background-color: rgba(23, 22, 22, 0.731);
-    
-}
-.input_label_dark{
-    background-color: rgba(130, 130, 130, 0.322);
-    color: rgb(236, 235, 235);
-    border-color: grey;
-}  
-.replace_input_dark{
-    /* background-color: rgba(71, 70, 70, 0.322); */
-    background-color: rgba(0, 0, 0, 0.635);
-    color: white;
-    border-color: grey;
-} 
-.replace_input_dark:focus{
-    /* background-color: rgba(71, 70, 70, 0.322); */
-    color: white;
-    background-color: rgba(0, 0, 0, 0.635);
-} 
+.body_replacetext_dark{background-color: rgba(13,12,12);}
+.replacetext_container_dark{background-color: rgba(45, 44, 44, 0.49);color: rgb(213, 210, 210);}
+.textfield_dark{background-color: rgba(23, 22, 22, 0.731);}
+.input_label_dark{ background-color: rgba(130, 130, 130, 0.322); color: rgb(236, 235, 235); border-color: grey;}  
+.replace_input_dark{background-color: rgba(0, 0, 0, 0.635);color: white;border-color: grey;} 
+.replace_input_dark:focus{color: white;background-color: rgba(0, 0, 0, 0.635);} 
 @media only screen and (min-width: 320px) and (max-width: 480px){
-    .body_replacetext{
-        
-        padding-bottom: 10%;
-    }
-    .replacetext_container_dark{
-        width: 98%;
-    }
-    .textfield{
-        width: 99%;
-    
-    }
+    .body_replacetext{padding-bottom: 10%;}
+    .replacetext_container_dark{width: 98%;}
+    .textfield{width: 99%;}
 }
 @media only screen and (min-width: 481px) and (max-width: 768px){
-    .body_replacetext{
-        
-        padding-bottom: 10%;
-    }
-    .replacetext_container_dark{
-        width: 90%;
-    }
-    .textfield{
-        width: 99%;
-    
-    }
+    .body_replacetext{padding-bottom: 10%;}
+    .replacetext_container_dark{width: 90%;}
+    .textfield{width: 99%;}
 }
 @media only screen and (min-width: 769px) and (max-width: 1024px){
-    .body_replacetext{
-        
-        padding-bottom: 10%;
-    }
-    .replacetext_container_dark{
-        width: 75%;
-    }
-    .textfield{
-        width: 100%;
-    
-    }
-
+    .body_replacetext{ padding-bottom: 10%;}
+    .replacetext_container_dark{width: 75%;}
+    .textfield{width: 100%; }
 }
 @media only screen and (min-width: 1025px) and (max-width: 1200px){
-    .body_replacetext{
-        
-        padding-bottom: 10%;
-    }
-    .replacetext_container_dark{
-       
-        width: 65%;
-    }
-    .textfield{
-        width: 100%;
-    
-    }
+    .body_replacetext{padding-bottom: 10%;}
+    .replacetext_container_dark{width: 65%;}
+    .textfield{width: 100%;}
 
 }
