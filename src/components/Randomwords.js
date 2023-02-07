@@ -37,7 +37,7 @@ export default function Randomwords(props) {
                 <p style={{color:props.mode === 'dark'?' rgb(177, 174, 174)':'black'}}>Your Word List</p>
                 <div className={`your_list your_list_${props.mode}`}>
                    
-                    {mywordlist.length > 0?mywordlist.map((word,index)=>{return <p key={index} className='ms-3 px-3 mt-3 mb-3'>words</p>}): <span style={{display:'none'}} >.</span>}
+                    {mywordlist.length > 0?mywordlist.map((word,index)=>{return <p key={index} className='ms-3 px-3 mt-3 mb-3'>{word}</p>}): <span style={{display:'none'}} >.</span>}
                 </div>
                 <button type="button" onClick={function(){updatemywordlist([])}} class={`btn btn-${props.mode === 'dark'?'dark':'secondary'} mt-3`}>Clear</button>
                 <button type="button" onClick={function(){navigator.clipboard.writeText(mywordlist);}} class={`btn btn-${props.mode === 'dark'?'dark':'secondary'} mt-3 ms-3`}>Copy</button>
