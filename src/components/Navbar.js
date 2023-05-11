@@ -22,7 +22,7 @@ export default function Navbar(props) {
             <Link className={`nav-link container_fluid_a_${props.mode}`} to="/about">About</Link>
             </li>
                 <li className="nav-item dropdown">
-                    <Link class={`nav-link dropdown-toggle container_fluid_a_${props.mode}`} to="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Dropdown</Link>
+                    <Link class={`nav-link dropdown-toggle container_fluid_a_${props.mode}`} to="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Tools</Link>
                     <div className={`dropdown-menu dropdown_menu_${props.mode}`} aria-labelledby="navbarDropdown">
                         <Link className={`dropdown-item container_fluid_a_${props.mode}`} to="/replace">Replace Word</Link>
                         <Link className={`dropdown-item container_fluid_a_${props.mode}`} to="/randomwords">Random Word Generator</Link>
